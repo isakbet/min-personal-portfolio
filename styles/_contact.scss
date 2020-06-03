@@ -1,0 +1,103 @@
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    & > * {
+        display: flex;
+        position: relative;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        h2 { flex: 0 0 50% }
+        hr {
+            position: absolute;
+            width: 100%;
+            top: 0;
+        }
+
+        @include tablet-breakpoint {
+            flex-direction: column;
+            padding-top: 40px;
+            padding-bottom: 40px;   
+            h2 { padding-bottom: 40px }       
+        }
+    }
+    @include cellphone-breakpoint {
+        padding-top: 0;
+    }
+}
+
+.in__touch__text {
+    .socials {
+        @include flex-btwn();
+        width: 100px;
+        padding-top: 30px;
+        a {
+            i { 
+                font-size: 22px;
+                transition: 0.15s ease-in-out;
+            }
+            &:nth-child(1) i:hover { color: #211F1F }
+            &:nth-child(2) i:hover { color: #00acee }
+            &:nth-child(3) i:hover { color: #0e76a8 }
+        }
+    }
+}
+
+.form {
+    flex: 1;
+    &__control {
+        & > * { width: 100% }
+        padding-bottom: 30px;
+        label { 
+            display: block; 
+            padding-bottom: 10px;
+        }
+        input, textarea {
+            background-color: $light-gray;
+            font-family: inherit;
+            border: none;
+            height: 50px;
+            padding: 15px;
+            letter-spacing: 1px;
+            &::placeholder { 
+                opacity: 40%;
+                font-size: 13px;
+                letter-spacing: normal;
+            }
+            &:focus-within { border: 1px solid $desaturated-cyan }
+        }
+        textarea {
+            min-height: 100px; max-height: 180px;
+            resize: vertical;
+            &::-webkit-scrollbar {
+                width: 10px;
+                &-track {
+                    background-color: #fff;
+                    border-right: 4px solid $light-gray;
+                    border-left: 4px solid $light-gray;
+                }
+                &-thumb {
+                    width: 10px;
+                    background-color: $dark-blue;
+                    border-radius: 100px;
+                }
+                &-corner { display: none }
+            }
+        }
+        small { display: none }
+
+        &.invalid {
+            small { display: block }
+            input, textarea { border: 1px solid $red }
+        }
+    }
+
+    .btn {
+        background-color: $dark-blue;
+        color: white;
+        &:hover {
+            border: 1px solid $dark-blue;
+            color: $dark-blue;
+            background-color: transparent;
+        }
+    }
+}
