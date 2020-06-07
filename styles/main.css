@@ -1017,17 +1017,11 @@ main > * hr {
   color: #0e76a8;
 }
 
-.form {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
 .form__control {
   padding-bottom: 30px;
 }
 
-.form__control > * {
+.form__control>* {
   width: 100%;
 }
 
@@ -1036,7 +1030,8 @@ main > * hr {
   padding-bottom: 10px;
 }
 
-.form__control input, .form__control textarea {
+.form__control input,
+.form__control textarea {
   background-color: #eaebeb;
   font-family: inherit;
   border: none;
@@ -1045,31 +1040,36 @@ main > * hr {
   letter-spacing: 1px;
 }
 
-.form__control input::-webkit-input-placeholder, .form__control textarea::-webkit-input-placeholder {
+.form__control input::-webkit-input-placeholder,
+.form__control textarea::-webkit-input-placeholder {
   opacity: 40%;
   font-size: 13px;
   letter-spacing: normal;
 }
 
-.form__control input:-ms-input-placeholder, .form__control textarea:-ms-input-placeholder {
+.form__control input:-ms-input-placeholder,
+.form__control textarea:-ms-input-placeholder {
   opacity: 40%;
   font-size: 13px;
   letter-spacing: normal;
 }
 
-.form__control input::-ms-input-placeholder, .form__control textarea::-ms-input-placeholder {
+.form__control input::-ms-input-placeholder,
+.form__control textarea::-ms-input-placeholder {
   opacity: 40%;
   font-size: 13px;
   letter-spacing: normal;
 }
 
-.form__control input::placeholder, .form__control textarea::placeholder {
+.form__control input::placeholder,
+.form__control textarea::placeholder {
   opacity: 40%;
   font-size: 13px;
   letter-spacing: normal;
 }
 
-.form__control input:focus-within, .form__control textarea:focus-within {
+.form__control input:focus-within,
+.form__control textarea:focus-within {
   border: 1px solid #5fb4a2;
 }
 
@@ -1107,7 +1107,8 @@ main > * hr {
   display: block;
 }
 
-.form__control.invalid input, .form__control.invalid textarea {
+.form__control.invalid input,
+.form__control.invalid textarea {
   border: 1px solid #f42f2f;
 }
 
@@ -1120,5 +1121,37 @@ main > * hr {
   border: 1px solid #20394c;
   color: #20394c;
   background-color: transparent;
+}
+
+/* Below line is write to use Google font online */
+
+#form_sample {
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 300px;
+  padding: 0 50px 15px;
+  margin-top: 20px;
+  box-shadow: 0 0 15px;
+  border-radius: 6px;
+  float: left
+}
+
+hr {
+  margin-top: -5px
+}
+
+label {
+  float: left;
+  font-size: 16px
+}
+
+/* -------------------------------------
+CSS for Sidebar (optional)
+---------------------------------------- */
+
+.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 /*# sourceMappingURL=main.css.map */
