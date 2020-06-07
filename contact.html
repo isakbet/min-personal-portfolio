@@ -62,24 +62,18 @@
         <div class="contact">
             <hr>
             <h2>Contact Me</h2>
-              <form class="form" name="contact" method="POST" data-netlify="true"
-                  netlify-honeypot="bot-field">
-                  <div class="form__control">
-                      <label for="name">Name</label>
-                      <input type="text" id="name" placeholder="John Appleseed">
-                      <small></small>
+              <form class="email-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                  <div hidden aria-hidden="true">
+                      <label>
+                          Don’t fill this out if you're human:
+                          <input name="bot-field" />
+                      </label>
                   </div>
-                  <div class="form__control email">
-                      <label for="email">Email Address</label>
-                      <input type="email" id="email" placeholder="email@example.com">
-                      <small></small>
+                  <label for="email">Your email address</label>
+                  <div>
+                      <input type="email" name="email" placeholder="Email" id="email" required />
+                      <button type="submit">Subscribe</button>
                   </div>
-                  <div class="form__control">
-                      <label for="message">Message</label>
-                      <textarea id="message" placeholder="How can I help?"></textarea>
-                      <small></small>
-                  </div>
-                  <button type="submit" class="btn">Send Message</button>
               </form>
         </div>
     </main>
