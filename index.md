@@ -3,21 +3,21 @@ date = "2020"
 title = "Contact me"
 ***
 
-<form class="form" method="POST" name="Contact" data-netlify="true">
-                <div class="form__control">
+<form method="POST" name="Contact" data-netlify="true">               
                     <label for="name">Name</label>
+                    <br>
                     <input type="text" id="name" placeholder="John Appleseed">
                     <small></small>
-                </div>
-                <div class="form__control email">
+                    <br>               
                     <label for="email">Email Address</label>
+                    <br>
                     <input type="email" id="email" placeholder="email@example.com">
                     <small></small>
-                </div>
-                <div class="form__control">
+                    <br>               
                     <label for="message">Message</label>
-                    <textarea id="message" placeholder="How can I help?"></textarea>
+                    <br>
+                    <textarea id="message" name="message" placeholder="How can I help?"></textarea>
                     <small></small>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
+                    <br>              
+                <input type="submit" value="submit">Send Message</button>
             </form>
