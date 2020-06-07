@@ -62,24 +62,24 @@
         <div class="contact">
             <hr>
             <h2>Contact Me</h2>
-             <form method="POST" name="Contact" data-netlify="true">
-                 <label for="name">Name</label>
-                 <br>
-                 <input type="text" id="name" placeholder="John Appleseed">
-                 <small></small>
-                 <br>
-                 <label for="email">Email Address</label>
-                 <br>
-                 <input type="email" id="email" placeholder="email@example.com">
-                 <small></small>
-                 <br>
-                 <label for="message">Message</label>
-                 <br>
-                 <textarea id="message" placeholder="How can I help?"></textarea>
-                 <small></small>
-                 <br>
-                 <input type="submit" value="submit">
-             </form>
+              <form class="form">
+                  <div class="form__control">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" placeholder="John Appleseed">
+                      <small></small>
+                  </div>
+                  <div class="form__control email">
+                      <label for="email">Email Address</label>
+                      <input type="email" id="email" placeholder="email@example.com">
+                      <small></small>
+                  </div>
+                  <div class="form__control">
+                      <label for="message">Message</label>
+                      <textarea id="message" placeholder="How can I help?"></textarea>
+                      <small></small>
+                  </div>
+                  <button type="submit" class="btn">Send Message</button>
+              </form>
         </div>
     </main>
 
