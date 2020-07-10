@@ -1,86 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-  <link rel="stylesheet" href="/styles/main.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Yoseph Berhane | Personal Portfolio - Home</title>
-</head>
-<body>
-  
-  <nav class="navbar">
-    <img src="/images/logo.svg" alt="Company logo">
-    <ul class="navbar__links">
-      <li class="current">
-        <a href="/index.html">Home</a>
-      </li>
-      <li>
-        <a href="/portfolio.html">Portfolio</a>
-      </li>
-      <li>
-        <a href="/contact.html">Contact Me</a>
-      </li>
-    </ul>
-    <a href="#" class="navbar__mobile">
-      <img src="/images/icons/hamburger.svg" class="hamburger" alt="Hamburger shape">
-      <img src="/images/icons/close.svg" class="close" alt="X shape">
-    </a>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Yoseph Berhane | Personal Portfolio - Home</title>
+  </head>
 
-  <div class="hero">
-    <img src="/images/homepage/desktop/image-homepage-hero@2x.jpg" class="hero__desktop" alt="Portfolio preview">
-    <img src="/images/homepage/tablet/image-homepage-hero@2x.jpg" class="hero__tablet" alt="Portfolio preview">
-    <div class="hero__text">
-      <h1>Hey, I’m Yoseph and I love building beautiful websites</h1>
-        <button class="btn btn-homepage" onclick="window.location.href='#mainText'">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14"><g class="bottomArrow" fill="none" fill-rule="evenodd" stroke="#5FB4A2"><path d="M0 9l8 4 8-4"/><path opacity=".5" d="M0 5l8 4 8-4"/><path opacity=".25" d="M0 1l8 4 8-4"/></g>
+  <body>
+    <nav class="navbar">
+      <img src="/images/logo.svg" alt="Company logo" />
+      <ul class="navbar__links">
+        <li class="current">
+          <a href="/index.html">Home</a>
+        </li>
+        <li>
+          <a href="/portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact Me</a>
+        </li>
+      </ul>
+      <a href="#" class="navbar__mobile">
+        <img
+          src="/images/icons/hamburger.svg"
+          class="hamburger"
+          alt="Hamburger shape"
+        />
+        <img src="/images/icons/close.svg" class="close" alt="X shape" />
+      </a>
+    </nav>
+
+    <div class="hero">
+      <img
+        src="/images/homepage/desktop/image-homepage-hero@2x.jpg"
+        class="hero__desktop"
+        alt="Portfolio preview"
+      />
+      <img
+        src="/images/homepage/tablet/image-homepage-hero@2x.jpg"
+        class="hero__tablet"
+        alt="Portfolio preview"
+      />
+      <div class="hero__text">
+        <h1>Hey, I’m Yoseph and I love building beautiful websites</h1>
+        <button
+          class="btn btn-homepage"
+          onclick="window.location.href='#mainText'"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14">
+            <g
+              class="bottomArrow"
+              fill="none"
+              fill-rule="evenodd"
+              stroke="#5FB4A2"
+            >
+              <path d="M0 9l8 4 8-4" />
+              <path opacity=".5" d="M0 5l8 4 8-4" />
+              <path opacity=".25" d="M0 1l8 4 8-4" />
+            </g>
           </svg>
           <span>About Me</span>
         </button>
+      </div>
     </div>
-  </div>
 
-  <div class="about">
-    <div class="img__container">
-      <img src="https://via.placeholder.com/1080x1200/a3c2c2/808080/?text=Portrait coming soon" class="desk-portrait" alt="Developer portrait">
-      <img src="https://via.placeholder.com/1080x1200/a3c2c2/808080/?text=Portrait coming soon" class="tab-portrait" alt="Developer portrait">
-      <form class="sub-portrait-form" action="/portfolio.html"> 
-        <button type="submit" class="btn">Go to portfolio</button>
-      </form>
-    </div>
-    <div id="mainText" class="main__text">
-      <hr>
-      <div class="inner__text">
-        <h2>About Me</h2>
-        <p>
-          I’m a junior front-end developer looking for a new role in an exciting company. 
-          I focus on writing accessible HTML, using modern CSS practices and writing clean 
-          JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to 
-          whatever tools are required. I’m based in Sweden, but I’m happy working remotely 
-          and have experience in remote teams. When I’m not coding, you’ll find me outdoors. 
-          I love being out in nature whether that’s going for a walk, run or cycling. I’d love 
-          you to check out my work.
-        </p>
-        <form action="/portfolio.html">
+    <div class="about">
+      <div class="img__container">
+        <img
+          src="https://via.placeholder.com/1080x1200/a3c2c2/808080/?text=Portrait coming soon"
+          class="desk-portrait"
+          alt="Developer portrait"
+        />
+        <img
+          src="https://via.placeholder.com/1080x1200/a3c2c2/808080/?text=Portrait coming soon"
+          class="tab-portrait"
+          alt="Developer portrait"
+        />
+        <form class="sub-portrait-form" action="/portfolio.html">
           <button type="submit" class="btn">Go to portfolio</button>
         </form>
+      </div>
+      <div id="mainText" class="main__text">
+        <hr />
+        <div class="inner__text">
+          <h2>About Me</h2>
+          <p>
+            I’m a junior front-end developer looking for a new role in an
+            exciting company. I focus on writing accessible HTML, using modern
+            CSS practices and writing clean JavaScript. When writing JavaScript
+            code, I mostly use React, but I can adapt to whatever tools are
+            required. Recently, I have devoted my time developing a
+            <a href="https://currency-converter-website.herokuapp.com/"
+              >currency converter website</a
+            >
+            and a
+            <a href="https://country-search-app.now.sh/">country search app</a>
+            using React. On a personal level, I am constantly seeking to improve
+            my skills and am currently learning React.js, Redux, Node.js, MongoDB, GraphQL and
+            TypeScript. I’m based in Sweden, but I’m happy working remotely and
+            can assimilate seamlessly into a team. I’d like you to check out my
+            work.
+          </p>
+          <form action="/portfolio.html">
+            <button type="submit" class="btn">Go to portfolio</button>
+          </form>
+        </div>
+        <hr />
+      </div>
     </div>
-    <hr>
-  </div>
-</div>
 
-  <div class="cta">
-    <h2>Interested in doing a project together?</h2>
-    <hr>
-    <form action="/contact.html">
-      <button type="submit" class="btn">Contact me</button>
-    </form>
-  </div>
+    <div class="cta">
+      <h2>Interested in doing a project together?</h2>
+      <hr />
+      <form action="/contact.html">
+        <button type="submit" class="btn">Contact me</button>
+      </form>
+    </div>
 
-  <footer class="footer">
-      <img src="/images/logo-white.svg" alt="Company logo">
+    <footer class="footer">
+      <img src="/images/logo-white.svg" alt="Company logo" />
       <ul class="footer__links">
         <li>
           <a href="/index.html">Home</a>
@@ -93,18 +142,30 @@
         </li>
       </ul>
       <div class="socials">
-        <a href="https://github.com/isakbet" aria-label="View my work on Github" target="_blank">
+        <a
+          href="https://github.com/isakbet"
+          aria-label="View my work on Github"
+          target="_blank"
+        >
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://twitter.com/yosephbet" aria-label="Follow me on Twitter" target="_blank">
+        <a
+          href="https://twitter.com/yosephbet"
+          aria-label="Follow me on Twitter"
+          target="_blank"
+        >
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="https://www.linkedin.com/in/yosephberhane/" aria-label="Add me on LinkedIn" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/yosephberhane/"
+          aria-label="Add me on LinkedIn"
+          target="_blank"
+        >
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
-  </footer>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
