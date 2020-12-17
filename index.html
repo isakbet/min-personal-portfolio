@@ -1,164 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="wfWL8G_j49ujBgM9HJ0NzroubRxEv_SO8pOjGLDL9ac" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="/styles/main.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <title>Yoseph Berhane | Personal Portfolio - Home</title>
-  </head>
 
-  <body>
-    <nav class="navbar">
-      <img src="/images/logo.svg" alt="Company logo" />
-      <ul class="navbar__links">
-        <li class="current">
-          <a href="/index.html">Home</a>
-        </li>
-        <li>
-          <a href="/portfolio.html">Portfolio</a>
-        </li>        
-        <li>
-          <a href="/contact.html">Contact Me</a>
-        </li>
-      </ul>
-      <a href="#" class="navbar__mobile">
-        <img
-          src="/images/icons/hamburger.svg"
-          class="hamburger"
-          alt="Hamburger shape"
-        />
-        <img src="/images/icons/close.svg" class="close" alt="X shape" />
-      </a>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="wfWL8G_j49ujBgM9HJ0NzroubRxEv_SO8pOjGLDL9ac" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Yoseph Berhane | Personal Portfolio - Home</title>
+</head>
 
-    <div class="hero">
-      <img
-        src="/images/homepage/desktop/image-homepage-hero@2x.jpg"
-        class="hero__desktop"
-        alt="Portfolio preview"
-      />
-      <img
-        src="/images/homepage/tablet/image-homepage-hero@2x.jpg"
-        class="hero__tablet"
-        alt="Portfolio preview"
-      />
-      <div class="hero__text">
-        <h1>Hey, I’m Yoseph and I love building beautiful websites</h1>
-        <button
-          class="btn btn-homepage"
-          onclick="window.location.href='#mainText'"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14">
-            <g
-              class="bottomArrow"
-              fill="none"
-              fill-rule="evenodd"
-              stroke="#5FB4A2"
-            >
-              <path d="M0 9l8 4 8-4" />
-              <path opacity=".5" d="M0 5l8 4 8-4" />
-              <path opacity=".25" d="M0 1l8 4 8-4" />
-            </g>
-          </svg>
-          <span>About Me</span>
-        </button>
-      </div>
+<body>
+  <nav class="navbar">
+    <img src="/images/logo.svg" alt="Company logo" />
+    <ul class="navbar__links">
+      <li class="current">
+        <a href="/index.html">Home</a>
+      </li>
+      <li>
+        <a href="/portfolio.html">Portfolio</a>
+      </li>
+      <li>
+        <a href="/contact.html">Contact Me</a>
+      </li>
+    </ul>
+    <a href="#" class="navbar__mobile">
+      <img src="/images/icons/hamburger.svg" class="hamburger" alt="Hamburger shape" />
+      <img src="/images/icons/close.svg" class="close" alt="X shape" />
+    </a>
+  </nav>
+
+  <div class="hero">
+    <img src="/images/homepage/desktop/image-homepage-hero@2x.jpg" class="hero__desktop" alt="Portfolio preview" />
+    <img src="/images/homepage/tablet/image-homepage-hero@2x.jpg" class="hero__tablet" alt="Portfolio preview" />
+    <div class="hero__text">
+      <h1>Hey, I’m Yoseph and I love building beautiful websites</h1>
+      <button class="btn btn-homepage" onclick="window.location.href='#mainText'">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14">
+          <g class="bottomArrow" fill="none" fill-rule="evenodd" stroke="#5FB4A2">
+            <path d="M0 9l8 4 8-4" />
+            <path opacity=".5" d="M0 5l8 4 8-4" />
+            <path opacity=".25" d="M0 1l8 4 8-4" />
+          </g>
+        </svg>
+        <span>About Me</span>
+      </button>
     </div>
+  </div>
 
-    <div class="about">
-      <div class="img__container">
-        <img
-          src="/images/portfolio/desktop/image-portfolio-portrait.jpg"
-          class="desk-portrait"
-          alt="Developer portrait"
-        />
-        <img
-          src="/images/portfolio/tablet/image-portfolio-portrait.jpg"
-          class="tab-portrait"
-          alt="Developer portrait"
-        />
-        <form class="sub-portrait-form" action="/portfolio.html">
+  <div class="about">
+    <div class="img__container">
+      <img src="/images/portfolio/desktop/image-portfolio-portrait.jpg" class="desk-portrait"
+        alt="Developer portrait" />
+      <img src="/images/portfolio/tablet/image-portfolio-portrait.jpg" class="tab-portrait" alt="Developer portrait" />
+      <form class="sub-portrait-form" action="/portfolio.html">
+        <button type="submit" class="btn">Go to portfolio</button>
+      </form>
+    </div>
+    <div id="mainText" class="main__text">
+      <hr />
+      <div class="inner__text">
+        <h2>About Me</h2>
+        <p>
+
+          I am a front-end engineer who has experience building applications using React. I focus on writing accessible
+          HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript
+          code, I mostly use React, but I can adapt to whatever tools are required. I am passionate
+          about finding solutions to complex problems and thrive when faced with new challenges. In addition to keeping
+          up with new web technologies, I enjoy working in fast-paced environments and can assimilate
+          seamlessly into a team. When I’m not coding, you’ll find me outdoors.
+          I love being out in nature. I’d love you to check out my work.
+        </p>
+        <form action="/portfolio.html">
           <button type="submit" class="btn">Go to portfolio</button>
         </form>
       </div>
-      <div id="mainText" class="main__text">
-        <hr />
-        <div class="inner__text">
-          <h2>About Me</h2>
-          <p>
-            I’m a front-end developer looking for a new role in an
-            exciting company. I focus on writing accessible HTML, using modern
-            CSS practices and writing clean JavaScript. When writing JavaScript
-            code, I mostly use React, but I can adapt to whatever tools are
-            required. I’m happy working remotely and
-            can assimilate seamlessly into a team. When I’m not coding, you’ll find me outdoors.
-            I love being out in nature. I’d love you to check out my work.
-          </p>
-          <form action="/portfolio.html">
-            <button type="submit" class="btn">Go to portfolio</button>
-          </form>
-        </div>
-        <hr />
-      </div>
-    </div>
-
-    <div class="cta">
-      <h2>Interested in doing a project together?</h2>
       <hr />
-      <form action="/contact.html">
-        <button type="submit" class="btn">Contact me</button>
-      </form>
     </div>
+  </div>
 
-    <footer class="footer">
-      <img src="/images/logo-white.svg" alt="Company logo" />
-      <ul class="footer__links">
-        <li>
-          <a href="/index.html">Home</a>
-        </li>
-        <li>
-          <a href="/portfolio.html">Portfolio</a>
-        </li>
-        <li>
-          <a href="/contact.html">Contact Me</a>
-        </li>
-      </ul>
-      <div class="socials">
-        <a
-          href="https://github.com/isakbet"
-          aria-label="View my work on Github"
-          target="_blank"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://twitter.com/yosephbet"
-          aria-label="Follow me on Twitter"
-          target="_blank"
-        >
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/yosephberhane/"
-          aria-label="Add me on LinkedIn"
-          target="_blank"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </footer>
+  <div class="cta">
+    <h2>Interested in doing a project together?</h2>
+    <hr />
+    <form action="/contact.html">
+      <button type="submit" class="btn">Contact me</button>
+    </form>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <footer class="footer">
+    <img src="/images/logo-white.svg" alt="Company logo" />
+    <ul class="footer__links">
+      <li>
+        <a href="/index.html">Home</a>
+      </li>
+      <li>
+        <a href="/portfolio.html">Portfolio</a>
+      </li>
+      <li>
+        <a href="/contact.html">Contact Me</a>
+      </li>
+    </ul>
+    <div class="socials">
+      <a href="https://github.com/isakbet" aria-label="View my work on Github" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://twitter.com/yosephbet" aria-label="Follow me on Twitter" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/yosephberhane/" aria-label="Add me on LinkedIn" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
